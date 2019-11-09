@@ -4,8 +4,8 @@ namespace LearnInterfaces {
       Speed = speed;
       LicensePlate = Tools.GenerateLicensePlate ();
     }
-    public string LicensePlate { get; protected set; }
-    public double Speed { get; protected set; }
+    public string LicensePlate { get; private set; }
+    public double Speed { get; private set; }
     public int Wheels { get; protected set; }
     public void Honk () { };
     public void SpeedUp () { };
