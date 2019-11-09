@@ -1,5 +1,9 @@
 namespace LearnInterfaces {
-  class Bicycle {
+  class Bicycle : Vehicle {
 
+    public Bicycle (double peed) : base (speed) {
+      Wheels = 2;
+    }
   }
+
 }
