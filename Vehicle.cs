@@ -9,6 +9,6 @@ namespace LearnInterfaces {
     public int Wheels { get; protected set; }
     public void Honk () { };
     public virtual void SpeedUp () { };
-    public void SlowDown () { };
+    public virtual void SlowDown () { };
   }
 }
