@@ -1,3 +1,5 @@
-class Vehicle {
+namespace LearnInterfaces {
+  class Vehicle {
 
+  }
 }
