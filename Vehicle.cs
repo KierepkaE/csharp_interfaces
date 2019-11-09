@@ -1,5 +1,10 @@
 namespace LearnInterfaces {
   class Vehicle {
-
+    public string LicensePlate { get; }
+    public double Speed { get; private set; }
+    public int Wheels { get; }
+    public void Honk () { };
+    public void SpeedUp () { };
+    public void SlowDown () { };
   }
 }

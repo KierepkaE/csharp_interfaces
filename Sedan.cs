@@ -2,7 +2,7 @@ using System;
 
 namespace LearnInterfaces {
 
-  class Sedan : IVehicle {
+  class Sedan : Vehicle, IVehicle {
     public string LicensePlate { get; }
 
     public double Speed { get; private set; }
