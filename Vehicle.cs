@@ -1,5 +1,5 @@
 namespace LearnInterfaces {
-  class Vehicle {
+  abstract class Vehicle {
     public Vehicle (double speed) {
       Speed = speed;
       LicensePlate = Tools.GenerateLicensePlate ();
@@ -10,5 +10,6 @@ namespace LearnInterfaces {
     public void Honk () { };
     public virtual void SpeedUp () { };
     public virtual void SlowDown () { };
+    public abstract string Describe ();
   }
 }

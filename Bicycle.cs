@@ -10,5 +10,16 @@ namespace LearnInterfaces {
         Speed = 15;
       }
     }
+
+    public override void SlowDown () {
+      Speed -= 5;
+      if (Speed < 15) {
+        Speed = 0;
+      }
+    }
+    public override string Describe () {
+      return $"This Bicycle is moving on {Wheels} wheels at {Speed} km/h.";
+    }
+
   }
 }
