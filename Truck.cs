@@ -1,29 +1,20 @@
 using System;
 
 namespace LearnInterfaces {
-  class Sedan : IVehicle {
-    public string LicensePlate { get; }
+  class Truck : Vehicle, IVehicle {
 
-    public double Speed { get; private set; }
+    public double Weight { get; }
 
-    public int Wheels { get; }
-
-    public Sedan (double speed) {
+    public Truck (double speed, double weight) {
       Speed = speed;
       LicensePlate = Tools.GenerateLicensePlate ();
-      Wheels = 4;
-    }
+      Weight = weight;
 
-    public void Honk () {
-      Console.WriteLine ("HONK!");
-    }
-
-    public void SpeedUp () {
-      Speed += 5;
-    }
-
-    public void SlowDown () {
-      Speed -= 5;
+      if (weight < 400) {
+        Wheels = 8;
+      } else {
+        Wheels = 12;
+      }
     }
 
   }
