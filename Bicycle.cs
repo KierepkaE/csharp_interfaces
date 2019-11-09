@@ -1,0 +1,5 @@
+namespace LearnInterfaces {
+  class Bicycle {
+
+  }
+}
